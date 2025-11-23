@@ -1,18 +1,18 @@
 {
-  "name": "hello-cdk",
+  "name": "cdk-apps",
   "version": "0.1.0",
   "bin": {
-    "hello-cdk": "bin/hello-cdk.js"
+    "hello-cdk": "bin/sns-sqs-lambda-cdk.js"
   },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "cdk-deploy": "cdk deploy --profile dev_admin",
-    "cdk-destroy": "cdk destroy --profile dev_admin",
-    "cdk-diff": "cdk diff",
-    "cdk-synth": "cdk synth --profile dev_admin"
+    "deploy": "cdk deploy --profile dev_admin",
+    "destroy": "cdk destroy --profile dev_admin",
+    "diff": "cdk diff",
+    "synth": "cdk synth --profile dev_admin"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
